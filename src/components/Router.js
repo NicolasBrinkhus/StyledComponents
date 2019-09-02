@@ -4,7 +4,7 @@ import { ThemeProvider, createGlobalStyle } from "styled-components";
 import App from "./App";
 import FormPage from "./Forms/FormPage";
 import TablesPage from "./TablesPage";
-import NavPage from "./NavPage";
+import NavPage from "./Navegation/NavPage";
 import NotFound from "./NotFound";
 
 const theme = {

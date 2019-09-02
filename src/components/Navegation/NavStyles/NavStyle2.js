@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import cog from "../../static/cog.svg";
+import cog from "../../../static/cog.svg";
 
 const picmov = keyframes`
   0% {
