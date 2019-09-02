@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { ThemeProvider, createGlobalStyle } from "styled-components";
 import App from "./App";
-import FormPage from "./FormPage";
+import FormPage from "./Forms/FormPage";
 import TablesPage from "./TablesPage";
 import NavPage from "./NavPage";
 import NotFound from "./NotFound";

@@ -12,7 +12,7 @@ const loading = keyframes`
   }
 `;
 
-const Form2 = styled.form`
+const FormStyle2 = styled.form`
   box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.05);
   background: rgba(0, 0, 0, 0.02);
   border: 5px solid white;
@@ -71,4 +71,4 @@ const Form2 = styled.form`
   }
 `;
 
-export default Form2;
+export default FormStyle2;

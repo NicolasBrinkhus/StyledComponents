@@ -11,7 +11,7 @@ const fadeInForm = keyframes`
   }
 `;
 
-const Form1 = styled.form`
+const FormStyle1 = styled.form`
   background: transparent;
   font-size: 1.5rem;
   line-height: 1.5;
@@ -49,4 +49,4 @@ const Form1 = styled.form`
   }
 `;
 
-export default Form1;
+export default FormStyle1;

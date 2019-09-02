@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import BTN1 from "./buttonStyles/button1";
-import FormInputs1 from "./FormStyles/FormInputs1";
+import BTN1 from "../buttonStyles/button1";
+import FormInputs1 from "./FormStyles/Form1";
+import FormInputs2 from "./FormStyles/Form2";
 
 const Container = styled.div`
   width: 100%;
@@ -25,16 +26,17 @@ const BtnContainer = styled.div`
 `;
 
 function FormPage() {
+  const [formSwitcher, setFormSwitcher] = React.useState(false);
   return (
     <Container>
       <BtnContainer>
-        <BTN1>Form 1</BTN1>
+        <BTN1 onClick={() => setFormSwitcher(!formSwitcher)}>Form 1</BTN1>
         <BTN1>Form 2</BTN1>
         <BTN1>Form 3</BTN1>
         <BTN1>Form 4</BTN1>
       </BtnContainer>
       <FormContainer>
-        <FormInputs1 />
+        {formSwitcher ? <FormInputs2 /> : <FormInputs1 />}
       </FormContainer>
     </Container>
   );

@@ -1,8 +1,7 @@
 import React from "react";
-import Form1 from "./Form1";
-import BTN7 from "../buttonStyles/button7";
+import FormStyle2 from "./FormStyle2";
 
-function FormInputs1(props) {
+function Form2() {
   const [loading, setLoading] = React.useState(false);
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
@@ -16,8 +15,9 @@ function FormInputs1(props) {
   };
 
   return (
-    <Form1 method="post" onSubmit={submitHandler}>
+    <FormStyle2 method="post" onSubmit={submitHandler}>
       <fieldset disabled={loading} aria-busy={loading}>
+        <h2>Sign In</h2>
         <label htmlFor="email">
           Email
           <input
@@ -38,12 +38,10 @@ function FormInputs1(props) {
             onChange={e => setPassword(e.target.value)}
           />
         </label>
-        <BTN7 className={loading ? "loading" : ""} type="submit">
-          {loading ? "Submitting..." : "Submit"}
-        </BTN7>
+        <button type="submit">{loading ? "Signing in..." : "Sign In"}</button>
       </fieldset>
-    </Form1>
+    </FormStyle2>
   );
 }
 
-export default FormInputs1;
+export default Form2;
