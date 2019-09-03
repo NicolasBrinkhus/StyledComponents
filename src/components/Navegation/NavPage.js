@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import bossIcon from "../static/bossIcon.png";
+import bossIcon from "../../static/bossIcon.png";
 import { NavStyle2, DropDown1 } from "./NavStyles/NavStyle2";
 import BTN7 from "../buttonStyles/button7";
 import Form1 from "../Forms/FormStyles/Form1";

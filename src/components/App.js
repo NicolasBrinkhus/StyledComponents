@@ -38,6 +38,7 @@ function App(props) {
         <BTN6 onClick={() => props.history.push("/navegation")}>
           Navegation
         </BTN6>
+        <p>hello</p>
         <BTN7>Buttons</BTN7>
         <BTN8>Send</BTN8>
       </BOX>
