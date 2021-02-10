@@ -25,19 +25,30 @@ const BtnContainer = styled.div`
   justify-items: center;
 `;
 
+function displayForm(form) {
+  switch (form) {
+    case 0:
+      return <FormInputs1 />;
+    case 1:
+      return <FormInputs2 />;
+    case 2:
+      return null;
+    default:
+      break;
+  }
+}
+
 function FormPage() {
-  const [formSwitcher, setFormSwitcher] = React.useState(false);
+  const [formSwitcher, setFormSwitcher] = React.useState(0);
   return (
     <Container>
       <BtnContainer>
-        <BTN1 onClick={() => setFormSwitcher(!formSwitcher)}>Form 1</BTN1>
-        <BTN1>Form 2</BTN1>
+        <BTN1 onClick={() => setFormSwitcher(0)}>Form 1</BTN1>
+        <BTN1 onClick={() => setFormSwitcher(1)}>Form 2</BTN1>
         <BTN1>Form 3</BTN1>
         <BTN1>Form 4</BTN1>
       </BtnContainer>
-      <FormContainer>
-        {formSwitcher ? <FormInputs2 /> : <FormInputs1 />}
-      </FormContainer>
+      <FormContainer>{displayForm(formSwitcher)}</FormContainer>
     </Container>
   );
 }
