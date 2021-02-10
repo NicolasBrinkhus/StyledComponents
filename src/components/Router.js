@@ -6,6 +6,7 @@ import FormPage from "./Forms/FormPage";
 import TablesPage from "./TablesPage";
 import NavPage from "./Navegation/NavPage";
 import NotFound from "./NotFound";
+import FrontPage1 from "./FrontPages/FrontPage1";
 
 const theme = {
   red: "#FF0000",
@@ -49,6 +50,7 @@ class Router extends React.Component {
           <BrowserRouter>
             <Switch>
               <Route exact path="/" component={App} />
+              <Route exact path="/front1" component={FrontPage1} />
               <Route exact path="/forms" component={FormPage} />
               <Route exact path="/tables" component={TablesPage} />
               <Route exact path="/navegation" component={NavPage} />
