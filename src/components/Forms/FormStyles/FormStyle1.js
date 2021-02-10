@@ -13,7 +13,7 @@ const fadeInForm = keyframes`
 
 const FormStyle1 = styled.form`
   background: transparent;
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 1.5;
   font-weight: 600;
   animation: ${fadeInForm} 0.3s ease-in-out;
@@ -29,7 +29,7 @@ const FormStyle1 = styled.form`
   select {
     width: 100%;
     padding: 0.5rem;
-    font-size: 1rem;
+    font-size: 2rem;
     border: none;
     &:focus {
       outline: 0;

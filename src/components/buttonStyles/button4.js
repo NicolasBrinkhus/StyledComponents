@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 const BTN4 = styled.button`
   position: relative;
-  width: 13rem;
+  width: 14rem;
   display: inline-block;
   outline: none;
   border: 0;
   vertical-align: middle;
   text-decoration: none;
   background: transparent;
-  padding: 0;
+  padding: 2px;
   font-size: 1.3rem;
   font-family: inherit;
   cursor: pointer;
