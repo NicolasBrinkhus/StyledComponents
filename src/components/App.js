@@ -19,7 +19,6 @@ const BOX = styled.div`
 `;
 
 function App(props) {
-
   return (
     <div>
       <h1>CSS Styled-Components Design Compilation</h1>
