@@ -14,7 +14,7 @@ const PageStyle = styled.div`
 
 function NavPage() {
   const [loading, setLoading] = React.useState(false);
-  const [islogin, setIslogin] = React.useState(false);
+  const [islogin] = React.useState(false);
   const [signInHandler, setSiginHandler] = React.useState(false);
 
   return (
