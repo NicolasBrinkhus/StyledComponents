@@ -1,21 +1,21 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
-const comeFromBottom = keyframes`
-  0%{
-    opacity:0;
-    transform:translateY(40px);
-  } 
-  100%{
-    opacity:1;
-    transform:translateY(0);
-  }
-`;
+// const comeFromBottom = keyframes`
+//   0%{
+//     opacity:0;
+//     transform:translateY(40px);
+//   }
+//   100%{
+//     opacity:1;
+//     transform:translateY(0);
+//   }
+// `;
 
 const BTN2 = styled.button`
   &,
   &:link,
   &:visited {
-    width: 13rem;
+    width: ${props => props.size};
     text-transform: uppercase;
     text-decoration: none;
     padding: 1.5rem 4rem;
@@ -23,8 +23,8 @@ const BTN2 = styled.button`
     border-radius: 10rem;
     transition: all 0.2s;
     position: relative;
-    background-color: green;
-    color: ${props => props.theme.lightgrey};
+    background-color: ${props => props.color};
+    color: ${props => props.theme.grey};
     border: none;
     cursor: pointer;
   }
@@ -36,7 +36,7 @@ const BTN2 = styled.button`
     &::after {
       transform: scaleX(1.4) scaleY(1.6);
       opacity: 0;
-      background-color: green;
+      background-color: ${props => props.color};
     }
   }
 

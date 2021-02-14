@@ -24,7 +24,9 @@ function App(props) {
       <h1>CSS Styled-Components Design Compilation</h1>
       <BOX>
         <BTN1 onClick={() => props.history.push("/front1")}>Front1</BTN1>
-        <BTN2 onClick={() => props.history.push("/forms")}>Forms</BTN2>
+        <BTN2 onClick={() => props.history.push("/forms")} color="green">
+          Forms
+        </BTN2>
         <BTN3 onClick={() => props.history.push("/tables")}>Tables</BTN3>
         <BTN4 className="learn-more">
           <div className="circle">
