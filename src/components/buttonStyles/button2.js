@@ -15,16 +15,18 @@ const BTN2 = styled.button`
   &,
   &:link,
   &:visited {
-    width: ${props => props.size};
+    width: ${props => props.size || "30rem"};
+    font-size: 1.5rem;
+    font-weight: 500;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 1.5rem 4rem;
+    padding: ${props => props.padding || "2.5rem 4rem"};
     display: inline-block;
     border-radius: 10rem;
     transition: all 0.2s;
     position: relative;
-    background-color: ${props => props.color};
-    color: ${props => props.theme.grey};
+    background-color: ${props => props.color || "white"};
+    color: ${props => props.fontColor || props.theme.lightblack};
     border: none;
     cursor: pointer;
   }
@@ -36,7 +38,7 @@ const BTN2 = styled.button`
     &::after {
       transform: scaleX(1.4) scaleY(1.6);
       opacity: 0;
-      background-color: ${props => props.color};
+      background-color: ${props => props.color || "white"};
     }
   }
 

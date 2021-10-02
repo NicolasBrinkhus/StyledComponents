@@ -10,13 +10,20 @@ import FrontPage1 from "./FrontPages/FrontPage1";
 
 const theme = {
   red: "#FF0000",
-  green: "#0cbf00",
+  green: "#55c57a",
+  greenlight: "#7ed56f",
+  greendark: " #28b485",
   black: "#393939",
+  lightblack: "#777777",
   coral: "#ff7f50",
   grey: "#3A3A3A",
   lightgrey: "#E1E1E1",
   offWhite: "#EDEDED",
   maxWidth: "1000px",
+  orangelight: "#ffb900",
+  orangedark: "#ff7730",
+  bluelight: "#2998ff",
+  bluedark: "#5643fa",
   bs: "0 12px 24px 0 rgba(0, 0, 0, 0.09)"
 };
 
