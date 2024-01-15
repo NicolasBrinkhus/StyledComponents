@@ -5,7 +5,7 @@ const INITIAL_STATE = {
   name: "",
   email: "",
   phone: "",
-  url: ""
+  url: "",
 };
 const PATTERN =
   "(?:(?:(?:https?|ftp):)?//)(?:S+(?::S*)?@)?(?:(?!(?:10|127)(?:.d{1,3}){3})(?!(?:169.254|192.168)(?:.d{1,3}){2})(?!172.(?:1[6-9]|2d|3[0-1])(?:.d{1,3}){2})(?:[1-9]d?|1dd|2[01]d|22[0-3])(?:.(?:1?d{1,2}|2[0-4]d|25[0-5])){2}(?:.(?:[1-9]d?|1dd|2[0-4]d|25[0-4]))|(?:(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)(?:.(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)*(?:.(?:[a-z\u00a1-\uffff]{2,})))(?::d{2,5})?(?:[/?#]S*)?";
@@ -15,7 +15,7 @@ const VALID_URL = [
   "https://www.google-com.com",
   "http://google-com.com",
   "http://google.com",
-  "//cdnblabla.cloudfront.net/css/app.css"
+  "//cdnblabla.cloudfront.net/css/app.css",
 ];
 
 function Form2() {
@@ -23,14 +23,14 @@ function Form2() {
   let [state, setState] = useState(INITIAL_STATE);
   let [success, setSuccess] = useState(false);
 
-  let onChangeHandler = e => {
+  let onChangeHandler = (e) => {
     let { name, value } = e.target;
-    setState(prevState => ({ ...prevState, [name]: value }));
+    setState((prevState) => ({ ...prevState, [name]: value }));
   };
 
-  let onBlurHandler = e => {
+  let onBlurHandler = (e) => {
     let { name, value } = e.target;
-    setState(prevState => ({ ...prevState, [name]: value.trim() }));
+    setState((prevState) => ({ ...prevState, [name]: value.trim() }));
   };
 
   let clearForm = () => {
@@ -39,7 +39,7 @@ function Form2() {
     setSuccess(false);
   };
 
-  let submitHandler = async e => {
+  let submitHandler = async (e) => {
     e.preventDefault();
     setLoading(true);
     await setTimeout(() => {
@@ -109,7 +109,7 @@ function Form2() {
             required
             placeholder="url"
             pattern={PATTERN}
-            title={VALID_URL.map(url => url)}
+            title={VALID_URL.map((url) => url)}
             value={state.url}
             onChange={onChangeHandler}
             onBlur={onBlurHandler}

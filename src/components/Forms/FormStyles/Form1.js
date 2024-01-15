@@ -6,7 +6,7 @@ function Form1(props) {
   const [loading, setLoading] = React.useState(false);
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
-  const submitHandler = async e => {
+  const submitHandler = async (e) => {
     e.preventDefault();
     setLoading(true);
     await setTimeout(() => {
@@ -25,7 +25,7 @@ function Form1(props) {
             name="email"
             placeholder="email"
             value={email}
-            onChange={e => setEmail(e.target.value)}
+            onChange={(e) => setEmail(e.target.value)}
           />
         </label>
         <label htmlFor="password">
@@ -35,7 +35,7 @@ function Form1(props) {
             name="password"
             placeholder="password"
             value={password}
-            onChange={e => setPassword(e.target.value)}
+            onChange={(e) => setPassword(e.target.value)}
           />
         </label>
         <BTN7 className={loading ? "loading" : ""} type="submit">

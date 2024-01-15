@@ -9,7 +9,7 @@ const PageStyle = styled.div`
   width: 100%;
   height: 100vh;
   position: relative;
-  background-color: ${props => props.theme.lightgrey};
+  background-color: ${(props) => props.theme.lightgrey};
 `;
 
 function NavPage() {
@@ -34,7 +34,9 @@ function NavPage() {
           </DropDown1>
         ) : (
           <DropDown1 className={loading ? "loading" : ""}>
-            <BTN7 onClick={() => setSiginHandler(!signInHandler)}>Log In</BTN7>
+            <BTN7 hidden onClick={() => setSiginHandler(!signInHandler)}>
+              Log In
+            </BTN7>
             {signInHandler ? <Form1 /> : ""}
             <BTN7>Register</BTN7>
           </DropDown1>

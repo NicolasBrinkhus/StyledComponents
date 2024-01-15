@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const BTN7 = styled.button`
-  width: 18rem;
+  width: ${(props) => (props.hidden ? "0rem" : "18rem")};
   padding: 10px 20px 10px 20px;
   border: none;
   border-radius: 1rem;

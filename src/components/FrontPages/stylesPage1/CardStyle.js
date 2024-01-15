@@ -32,24 +32,24 @@ const CardStyle = styled.div`
       &-1 {
         background-image: linear-gradient(
           to right bottom,
-          ${props => props.theme.orangelight},
-          ${props => props.theme.orangedark}
+          ${(props) => props.theme.orangelight},
+          ${(props) => props.theme.orangedark}
         );
       }
 
       &-2 {
         background-image: linear-gradient(
           to right bottom,
-          ${props => props.theme.greenlight},
-          ${props => props.theme.greendark}
+          ${(props) => props.theme.greenlight},
+          ${(props) => props.theme.greendark}
         );
       }
 
       &-3 {
         background-image: linear-gradient(
           to right bottom,
-          ${props => props.theme.bluelight},
-          ${props => props.theme.bluedark}
+          ${(props) => props.theme.bluelight},
+          ${(props) => props.theme.bluedark}
         );
       }
     }
@@ -74,8 +74,8 @@ const CardStyle = styled.div`
     &--1 {
       background-image: linear-gradient(
           to right bottom,
-          ${props => props.theme.orangelight},
-          ${props => props.theme.orangedark}
+          ${(props) => props.theme.orangelight},
+          ${(props) => props.theme.orangedark}
         ),
         url(${nat4});
     }
@@ -83,8 +83,8 @@ const CardStyle = styled.div`
     &--2 {
       background-image: linear-gradient(
           to right bottom,
-          ${props => props.theme.greenlight},
-          ${props => props.theme.greendark}
+          ${(props) => props.theme.greenlight},
+          ${(props) => props.theme.greendark}
         ),
         url(${nat5});
     }
@@ -92,8 +92,8 @@ const CardStyle = styled.div`
     &--3 {
       background-image: linear-gradient(
           to right bottom,
-          ${props => props.theme.bluelight},
-          ${props => props.theme.bluedark}
+          ${(props) => props.theme.bluelight},
+          ${(props) => props.theme.bluedark}
         ),
         url(${nat6});
     }
@@ -144,7 +144,7 @@ const CardStyle = styled.div`
         padding: 1rem;
 
         &:not(:last-child) {
-          border-bottom: 1px solid ${props => props.theme.lightgrey};
+          border-bottom: 1px solid ${(props) => props.theme.lightgrey};
         }
       }
     }

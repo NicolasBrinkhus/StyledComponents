@@ -7,8 +7,8 @@ const Title2Style = styled.h2`
   display: inline-block;
   background-image: linear-gradient(
     to right,
-    ${props => props.theme.greenlight},
-    ${props => props.theme.greendark}
+    ${(props) => props.theme.greenlight},
+    ${(props) => props.theme.greendark}
   );
   -webkit-background-clip: text;
   color: transparent;

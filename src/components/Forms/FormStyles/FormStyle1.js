@@ -33,7 +33,7 @@ const FormStyle1 = styled.form`
     border: none;
     &:focus {
       outline: 0;
-      border-color: ${props => props.theme.red};
+      border-color: ${(props) => props.theme.red};
     }
   }
   fieldset {

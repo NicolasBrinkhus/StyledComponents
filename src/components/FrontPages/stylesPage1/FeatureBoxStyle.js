@@ -11,7 +11,7 @@ const FeatureBoxStyle = styled.div`
 
   p {
     font-size: 1.5rem;
-    color: ${props => props.theme.lightblack};
+    color: ${(props) => props.theme.lightblack};
   }
 
   .icon {
@@ -20,8 +20,8 @@ const FeatureBoxStyle = styled.div`
     display: inline-block;
     background-image: linear-gradient(
       to right,
-      ${props => props.theme.greenlight},
-      ${props => props.theme.greendark}
+      ${(props) => props.theme.greenlight},
+      ${(props) => props.theme.greendark}
     );
     color: transparent;
   }

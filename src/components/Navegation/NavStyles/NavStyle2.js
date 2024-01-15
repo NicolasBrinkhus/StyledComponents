@@ -65,7 +65,7 @@ const NavStyle2 = styled.nav`
   border-radius: 2rem;
   text-align: center;
   /* animation: ${picmovbck} 0.5s ease-in-out; */
-  
+
   & img {
     cursor: pointer;
   }
@@ -106,7 +106,6 @@ const NavStyle2 = styled.nav`
     & button {
       animation: ${animbtn} 0.5s ease-in-out;
       visibility: visible;
-      width: 18rem;
     }
   }
 `;

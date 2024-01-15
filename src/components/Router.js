@@ -24,7 +24,7 @@ const theme = {
   orangedark: "#ff7730",
   bluelight: "#2998ff",
   bluedark: "#5643fa",
-  bs: "0 12px 24px 0 rgba(0, 0, 0, 0.09)"
+  bs: "0 12px 24px 0 rgba(0, 0, 0, 0.09)",
 };
 
 const GlobalStyle = createGlobalStyle`

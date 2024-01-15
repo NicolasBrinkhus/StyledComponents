@@ -26,7 +26,7 @@ const CompositionStyle = styled.div`
     }
 
     &:hover {
-      outline: 1.5rem solid ${props => props.theme.green};
+      outline: 1.5rem solid ${(props) => props.theme.green};
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 20;

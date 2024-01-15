@@ -13,7 +13,7 @@ import {
   nat3,
   nat3large,
   nat8,
-  nat9
+  nat9,
 } from "./static";
 import videowebm from "./static/videowebm.webm";
 import videomp4 from "./static/videomp4.mp4";
@@ -162,7 +162,7 @@ function FrontPage1() {
             style={{
               display: "flex",
               justifyContent: "space-evenly",
-              justifyItems: "center"
+              justifyItems: "center",
             }}
           >
             <FeatureBoxStyle>
@@ -213,7 +213,7 @@ function FrontPage1() {
             style={{
               display: "flex",
               justifyContent: "space-evenly",
-              justifyItems: "center"
+              justifyItems: "center",
             }}
           >
             <CardStyle>
@@ -332,7 +332,7 @@ function FrontPage1() {
               display: "flex",
               flexDirection: "column",
               height: "75vh",
-              justifyContent: "space-evenly"
+              justifyContent: "space-evenly",
             }}
           >
             <StoryStyle>
