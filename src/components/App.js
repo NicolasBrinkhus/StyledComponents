@@ -8,6 +8,7 @@ import BTN5 from "./buttonStyles/button5";
 import BTN6 from "./buttonStyles/button6";
 import BTN7 from "./buttonStyles/button7";
 import BTN8 from "./buttonStyles/button8";
+import { useNavigate } from "react-router-dom";
 
 const BOX = styled.div`
   display: grid;
@@ -19,25 +20,25 @@ const BOX = styled.div`
 `;
 
 function App(props) {
+  const navigate = useNavigate();
+
   return (
     <div>
       <h1>CSS Styled-Components Design Compilation</h1>
       <BOX>
-        <BTN1 onClick={() => props.history.push("/front1")}>Front1</BTN1>
-        <BTN2 onClick={() => props.history.push("/forms")} color="green">
+        <BTN1 onClick={() => navigate("/front1")}>Front1</BTN1>
+        <BTN2 onClick={() => navigate("/forms")} color="green">
           Forms
         </BTN2>
-        <BTN3 onClick={() => props.history.push("/tables")}>Tables</BTN3>
+        <BTN3 onClick={() => navigate("/tables")}>Tables</BTN3>
         <BTN4 className="learn-more">
           <div className="circle">
             <span className="icon arrow"></span>
           </div>
           <p className="button-text">Learn More</p>
         </BTN4>
-        <BTN5 onClick={() => props.history.push("/")}>Buttons</BTN5>
-        <BTN6 onClick={() => props.history.push("/navegation")}>
-          Navegation
-        </BTN6>
+        <BTN5 onClick={() => navigate("/")}>Buttons</BTN5>
+        <BTN6 onClick={() => navigate("/navegation")}>Navegation</BTN6>
         <p>hello</p>
         <BTN7>Buttons</BTN7>
         <BTN8>Send</BTN8>
