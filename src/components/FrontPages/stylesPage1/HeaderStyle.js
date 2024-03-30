@@ -3,11 +3,7 @@ import { herosmall } from "../static";
 
 const HeaderStyle = styled.header`
   height: 90vh;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(126, 213, 111, 0.8),
-      rgba(40, 180, 133, 0.8)
-    ),
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)),
     url(${herosmall});
   background-size: cover;
   background-position: top;

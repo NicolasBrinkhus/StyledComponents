@@ -34,12 +34,7 @@ const NavListStyle = styled.nav`
       color: white;
       text-decoration: none;
       text-transform: uppercase;
-      background-image: linear-gradient(
-        120deg,
-        transparent 0%,
-        transparent 50%,
-        white 50%
-      );
+      background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
       background-size: 220%;
       transition: all 0.4s;
 

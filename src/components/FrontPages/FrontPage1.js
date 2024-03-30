@@ -4,17 +4,7 @@ import NavButtonStyle from "./stylesPage1/NavButtonStyle";
 import NavBgStyle from "./stylesPage1/NavBgStyle";
 import NavListStyle from "./stylesPage1/NavListStyle";
 import HeaderStyle from "./stylesPage1/HeaderStyle";
-import {
-  logowhite,
-  nat1,
-  nat1large,
-  nat2,
-  nat2large,
-  nat3,
-  nat3large,
-  nat8,
-  nat9,
-} from "./static";
+import { logowhite, nat1, nat1large, nat2, nat2large, nat3, nat3large, nat8, nat9 } from "./static";
 import videowebm from "./static/videowebm.webm";
 import videomp4 from "./static/videomp4.mp4";
 import BTN2 from "../buttonStyles/button2";
@@ -38,13 +28,7 @@ function FrontPage1() {
   return (
     <FrontPage1Style>
       <div className="navigation">
-        <input
-          id="navi-toggle"
-          type="checkbox"
-          style={{ display: "none" }}
-          onClick={() => setNav(!nav)}
-          value={nav}
-        />
+        <input id="navi-toggle" type="checkbox" style={{ display: "none" }} onClick={() => setNav(!nav)} value={nav} />
 
         <NavButtonStyle for="navi-toggle">
           <span>&nbsp;</span>
@@ -109,22 +93,16 @@ function FrontPage1() {
 
           <FirstRowStyle>
             <div style={{ width: "50%" }}>
-              <Title3Style>
-                You-re going to fall inlove with nature!
-              </Title3Style>
+              <Title3Style>You-re going to fall inlove with nature!</Title3Style>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                ac placerat lectus, a pulvinar Fusce ac placerat lectus, a
-                pulvinar quam. Vestibulum lectus erat, marcu.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac placerat lectus, a pulvinar Fusce ac
+                placerat lectus, a pulvinar quam. Vestibulum lectus erat, marcu.
               </p>
 
-              <Title3Style>
-                Live adventures like you never have before!
-              </Title3Style>
+              <Title3Style>Live adventures like you never have before!</Title3Style>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                ac placerat lectus, a pulvinar quam. Vestibulum lectus erat,
-                marcu.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac placerat lectus, a pulvinar quam.
+                Vestibulum lectus erat, marcu.
               </p>
             </div>
             <div style={{ width: "50%" }}>
@@ -169,36 +147,28 @@ function FrontPage1() {
               <i className="icon icon-basic-world"></i>
               <Title3Style>Explore the World</Title3Style>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                ac placerat lectus, a pulvinar quam. Vestibulum lectus erat,
-                marcu.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac placerat lectus, a pulvinar quam.
+                Vestibulum lectus erat, marcu.
               </p>
             </FeatureBoxStyle>
 
             <FeatureBoxStyle>
               <i className="icon icon-basic-compass"></i>
               <Title3Style>Meet Nature</Title3Style>
-              <p>
-                Lorem e Vestibulum lectus erat, marcu.Lorem e Vestibulum lectus
-                erat, marcu.
-              </p>
+              <p>Lorem e Vestibulum lectus erat, marcu.Lorem e Vestibulum lectus erat, marcu.</p>
             </FeatureBoxStyle>
 
             <FeatureBoxStyle>
               <i className="icon icon-basic-map"></i>
               <Title3Style>Find your Way</Title3Style>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                ac placerat lectus, a pulvinar quam.
-              </p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac placerat lectus, a pulvinar quam.</p>
             </FeatureBoxStyle>
 
             <FeatureBoxStyle>
               <i className="icon icon-basic-heart"></i>
               <Title3Style>Live a Healthier Life!</Title3Style>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                ac placerat lectus, lectus erat, marcu.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac placerat lectus, lectus erat, marcu.
               </p>
             </FeatureBoxStyle>
           </div>
@@ -220,9 +190,7 @@ function FrontPage1() {
               <div className="side side--front">
                 <div className="picture picture--1">&nbsp;</div>
                 <h4 className="heading">
-                  <span className="heading-span heading-span--1">
-                    The Sea Explore
-                  </span>
+                  <span className="heading-span heading-span--1">The Sea Explore</span>
                 </h4>
 
                 <div className="details">
@@ -250,9 +218,7 @@ function FrontPage1() {
               <div className="side side--front">
                 <div className="picture picture--2">&nbsp;</div>
                 <h4 className="heading">
-                  <span className="heading-span heading-span--2">
-                    The Forest Hiker
-                  </span>
+                  <span className="heading-span heading-span--2">The Forest Hiker</span>
                 </h4>
 
                 <div className="details">
@@ -280,9 +246,7 @@ function FrontPage1() {
               <div className="side side--front">
                 <div className="picture picture--3">&nbsp;</div>
                 <h4 className="heading">
-                  <span className="heading-span heading-span--3">
-                    The Snow Adventure
-                  </span>
+                  <span className="heading-span heading-span--3">The Snow Adventure</span>
                 </h4>
 
                 <div className="details">
@@ -342,14 +306,11 @@ function FrontPage1() {
               </figure>
 
               <div className="text">
-                <h3 className="heading-tertiary u-margin-bottom-small">
-                  I had the best week ever with my family
-                </h3>
+                <h3 className="heading-tertiary u-margin-bottom-small">I had the best week ever with my family</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                  ac placerat lectus, lectus erat, marcu.Lorem ipsum dolor sit
-                  amet, consectetur adipiscing elit. Fusce ac placerat lectus,
-                  lectus erat, marcu.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac placerat lectus, lectus erat,
+                  marcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac placerat lectus, lectus erat,
+                  marcu.
                 </p>
               </div>
             </StoryStyle>
@@ -360,15 +321,11 @@ function FrontPage1() {
               </figure>
 
               <div className="text">
-                <h3 className="heading-tertiary u-margin-bottom-small">
-                  Wow, My life is completely different now.
-                </h3>
+                <h3 className="heading-tertiary u-margin-bottom-small">Wow, My life is completely different now.</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                  ac placerat lectus, lectus erat, marcu.Lorem ipsum dolor sit
-                  amet, consectetur adipiscing elit. Fusce ac placerat lectus,
-                  lectus erat, marcu. Fusce ac placerat lectus, lectus erat,
-                  marcu.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac placerat lectus, lectus erat,
+                  marcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac placerat lectus, lectus erat,
+                  marcu. Fusce ac placerat lectus, lectus erat, marcu.
                 </p>
               </div>
             </StoryStyle>
@@ -391,25 +348,13 @@ function FrontPage1() {
                   </div>
 
                   <div className="form__group">
-                    <input
-                      type="text"
-                      className="form__input"
-                      placeholder="Full Name"
-                      id="name"
-                      required
-                    />
+                    <input type="text" className="form__input" placeholder="Full Name" id="name" required />
                     <label for="name" className="form__label">
                       Full Name
                     </label>
                   </div>
                   <div className="form__group">
-                    <input
-                      type="email"
-                      className="form__input"
-                      placeholder="Email Address"
-                      id="email"
-                      required
-                    />
+                    <input type="email" className="form__input" placeholder="Email Address" id="email" required />
                     <label for="email" className="form__label">
                       Email Address
                     </label>
@@ -417,12 +362,7 @@ function FrontPage1() {
 
                   <div className="form__group">
                     <div className="form__radio-group">
-                      <input
-                        type="radio"
-                        className="form__radio-input"
-                        id="small"
-                        name="size"
-                      />
+                      <input type="radio" className="form__radio-input" id="small" name="size" />
                       <label for="small" className="form__radio-label">
                         <span className="form__radio-button"></span>
                         Small tour Group
@@ -430,12 +370,7 @@ function FrontPage1() {
                     </div>
 
                     <div className="form__radio-group">
-                      <input
-                        type="radio"
-                        className="form__radio-input"
-                        id="large"
-                        name="size"
-                      />
+                      <input type="radio" className="form__radio-input" id="large" name="size" />
                       <label for="large" className="form__radio-label">
                         <span className="form__radio-button"></span>
                         Large tour Group
@@ -444,9 +379,7 @@ function FrontPage1() {
                   </div>
 
                   <div className="form__group">
-                    <button className="btn btn--green u-margin-top-small">
-                      Next step &rarr;
-                    </button>
+                    <button className="btn btn--green u-margin-top-small">Next step &rarr;</button>
                   </div>
                 </form>
               </div>
@@ -458,14 +391,8 @@ function FrontPage1() {
       <footer className="footer">
         <div className="footer__logo-box">
           <picture className="footer__logo">
-            <source
-              srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x"
-              media="(max-width: 37.5em)"
-            />
-            <img
-              srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x"
-              alt="Full Logo"
-            />
+            <source srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" media="(max-width: 37.5em)" />
+            <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full Logo" />
           </picture>
         </div>
         <div className="row">
@@ -510,10 +437,9 @@ function FrontPage1() {
               <a href="/" className="footer__link">
                 Advanced CSS and SASS
               </a>
-              . Copyright &copy; by Nícolas Brinkhus. You are 100% allowed to
-              use this webpage fot both personal and commercial use, but NOT to
-              claim it as your own design. A credit to the original author,
-              Jonas Schmedtmann, is of course highly appreciated!
+              . Copyright &copy; by Nícolas Brinkhus. You are 100% allowed to use this webpage fot both personal and
+              commercial use, but NOT to claim it as your own design. A credit to the original author, Jonas
+              Schmedtmann, is of course highly appreciated!
             </p>
           </div>
         </div>
@@ -529,21 +455,16 @@ function FrontPage1() {
             <a href="#section-tours" className="popup__close">
               &times;
             </a>
-            <h2 className="heading-secondary u-margin-bottom-medium">
-              Start booking now
-            </h2>
+            <h2 className="heading-secondary u-margin-bottom-medium">Start booking now</h2>
             <h3 className="heading-tertiary u-margin-bottom-small">
               Important &nbsp; Please read these terms before booking
             </h3>
             <p className="popup__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac
-              placerat lectus, lectus erat, marcu.Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Fusce ac placerat lectus, lectus
-              erat, marcu. Fusce ac placerat lectus, lectus erat, marcu. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac
-              placerat lectus, lectus erat, marcu.Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Fusce ac placerat lectus, lectus
-              erat, marcu. Fusce ac placerat lectus, lectus erat, marcu
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac placerat lectus, lectus erat,
+              marcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac placerat lectus, lectus erat,
+              marcu. Fusce ac placerat lectus, lectus erat, marcu. Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Fusce ac placerat lectus, lectus erat, marcu.Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Fusce ac placerat lectus, lectus erat, marcu. Fusce ac placerat lectus, lectus erat, marcu
             </p>
             <a href="/" className="btn btn--green">
               Book now

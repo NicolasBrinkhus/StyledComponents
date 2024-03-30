@@ -20,12 +20,7 @@ function NavPage() {
   return (
     <PageStyle>
       <NavStyle2 className={loading ? "loading" : ""}>
-        <img
-          onClick={() => setLoading(!loading)}
-          width="100"
-          src={bossIcon}
-          alt="pic"
-        />
+        <img onClick={() => setLoading(!loading)} width="100" src={bossIcon} alt="pic" />
         {islogin ? (
           <DropDown1 className={loading ? "loading" : ""}>
             <h2>John Doe</h2>

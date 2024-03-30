@@ -115,10 +115,7 @@ function Form2() {
             onBlur={onBlurHandler}
           />
         </label>
-        {success &&
-          Object.values(state).map((value, index) => (
-            <p key={index}>{value}</p>
-          ))}
+        {success && Object.values(state).map((value, index) => <p key={index}>{value}</p>)}
         <button type="submit">{loading ? "Sending..." : "Send"}</button>
         <button type="reset" onClick={clearForm}>
           Reset
